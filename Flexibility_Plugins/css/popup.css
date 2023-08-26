@@ -1,0 +1,8 @@
+*{margin:0;padding: 0;}
+h1{color: aquamarine;}
+button{
+    outline: none;
+    /*border: none;*/
+    /*border-radius: 5px;*/
+}
+
