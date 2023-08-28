@@ -1,3 +1,39 @@
 chrome.runtime.onInstalled.addListener(() =>{
     console.log("Flexibility安装成功！");
 });
+
+
+function getNowTime() {
+    let nowTimes = new Date();
+    let hours = nowTimes.getHours();
+    let Minutes = nowTimes.getMinutes();
+    let Seconds = nowTimes.getSeconds();
+    console.log(hours+":"+Minutes+":"+Seconds);
+    document.getElementById("hours1").innerText = hours.toString().length===1?0:hours.toString().substring(0,1);
+    document.getElementById("hours2").innerText = hours.toString().length===1?hours:hours.toString().substring(0,1);
+    document.getElementById("minutes1").innerText = Minutes.toString().length===1?0:Minutes.toString().substring(0,1);
+    document.getElementById("minutes2").innerText = Minutes.toString().length===1?Minutes:Minutes.toString().substring(1,2);
+    document.getElementById("seconds1").innerText = Seconds.toString().length===1?0:Seconds.toString().substring(0,1);
+    document.getElementById("seconds2").innerText = Seconds.toString().length===1?Seconds:Seconds.toString().substring(1,2);
+    console.log("这是来之后台的时间方法");
+    setTimeout(getNowTime,1000);
+}
+function getCountDown() {
+    let timevalue = "23:10:00";
+    let nowTimes = new Date();
+    let hours = nowTimes.getHours();
+    let Minutes = nowTimes.getMinutes();
+    let Seconds = nowTimes.getSeconds();
+    let split = timevalue.split(":");
+    let allSeconds = (split[0]-hours)*3600+(split[1]-Minutes)*60+(split[2]-Seconds)*1;
+    console.log(allSeconds);
+    hours = Math.trunc(allSeconds/3600);
+    Minutes = Math.trunc(allSeconds/60);
+    Seconds = allSeconds%60;
+    console.log(hours+":"+Minutes+":"+Seconds);
+    setTimeout(getCountDown,1000);
+}
+
+function test() {
+    console.log("倩倩真可爱");
+}
