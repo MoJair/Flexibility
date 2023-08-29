@@ -27,6 +27,6 @@
   },
   //"options_page": "pages/options.html",也可直接用这个
   "background": {"service_worker": "js/background.js"},
-  "permissions": ["storage","activeTab","scripting","tabs"],
+  "permissions": ["storage","activeTab","scripting","tabs","alarms","notifications"],
   "host_permissions": ["*://*/*"]
 }
