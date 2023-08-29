@@ -37,3 +37,23 @@ function getCountDown() {
 function test() {
     console.log("倩倩真可爱");
 }
+
+chrome.alarms.create("test",{ periodInMinutes: 1 });
+chrome.alarms.onAlarm.addListener(() => {
+    console.info("定时器"+new Date());
+    testnotification();
+});
+
+function testnotification() {
+    chrome.notifications.create("test", {
+        type:"basic",
+        title:"测试通知",
+        iconUrl:"../images/icon48.png",
+        message:"准备睡觉！",
+        contextMessage:"简略标题",
+        requireInteraction:true
+    },function (){
+        console.log("通知发出");
+    });
+}
+
