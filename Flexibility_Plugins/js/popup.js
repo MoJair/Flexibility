@@ -6,6 +6,16 @@ window.onload = function startTime(){
     //var bg1 = chrome.runtime.getBackgroundPage();
     //bg.getNowTime();
     //getCountDown();
-console.log(bg1)
+//console.log(bg1)
+    test();
 }
 //bg.test();
+
+
+
+function test() {
+    chrome.runtime.sendMessage("hello", (response) => {
+        console.log(response);
+    });
+    setTimeout(test,1000);
+}
