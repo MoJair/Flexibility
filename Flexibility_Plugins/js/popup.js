@@ -7,7 +7,7 @@ window.onload = function startTime(){
     //bg.getNowTime();
     //getCountDown();
 //console.log(bg1)
-    test();
+    //test();
 }
 //bg.test();
 
