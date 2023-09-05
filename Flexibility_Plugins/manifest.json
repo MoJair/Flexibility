@@ -2,6 +2,7 @@
   "name": "Flexibility",
   "description": "Flexibility——一个灵活易用的chrome插件，敬请期待！",
   "version": "1.0.0",
+  "version_name": "1.0.0 beta",
   "manifest_version": 3,
   //这里的icons是全局的所有界面图标
     "icons": {
