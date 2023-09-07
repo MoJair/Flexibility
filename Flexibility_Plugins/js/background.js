@@ -2,7 +2,30 @@ chrome.runtime.onInstalled.addListener(() =>{
     console.log("Flexibility安装成功！");
 });
 
+//所有设置
+var allSetData = {
+    monring:{time:"09:00:00",enableStatus:"",useStatus:"",title:"早上好！",message:""},
+    after:{time:"09:00:00",enableStatus:"",useStatus:"",title:"中午好！",message:""},
+    goodnight:{time:"09:00:00",enableStatus:"",useStatus:"",title:"下午好！",message:""}
+}
 
+setTimeout(st1,1000);
+function st1(){
+    console.log("6666666666666");
+    test1();
+}
+function test1(){
+    for (let key in allSetData) {
+        console.log(key+"---->");
+        console.log(allSetData[key]);
+    }
+}
+
+function aa(){
+    console.info("9999999999");
+    setTimeout(aa,1000);
+}
+aa();
 function getNowTime() {
     let nowTimes = new Date();
     let hours = nowTimes.getHours();
@@ -34,9 +57,7 @@ function getCountDown() {
     setTimeout(getCountDown,1000);
 }
 
-function test() {
-    console.log("倩倩真可爱");
-}
+
 
 chrome.alarms.create("test1",{ periodInMinutes: 2 });
 chrome.alarms.onAlarm.addListener(() => {
