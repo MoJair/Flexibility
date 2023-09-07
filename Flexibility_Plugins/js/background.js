@@ -6,7 +6,8 @@ chrome.runtime.onInstalled.addListener(() =>{
 var allSetData = {
     monring:{time:"09:00:00",enableStatus:"",useStatus:"",title:"早上好！",message:""},
     after:{time:"09:00:00",enableStatus:"",useStatus:"",title:"中午好！",message:""},
-    goodnight:{time:"09:00:00",enableStatus:"",useStatus:"",title:"下午好！",message:""}
+    goodnight:{time:"09:00:00",enableStatus:"",useStatus:"",title:"下午好！",message:""},
+    other:{time:"09:00:00",enableStatus:"",useStatus:"",title:"下午好！",message:""}
 }
 
 setTimeout(st1,1000);
