@@ -1,0 +1,14 @@
+*{margin:0;padding: 0;}
+h1{color: aquamarine;}
+button{
+    outline: none;
+    /*border: none;*/
+    /*border-radius: 5px;*/
+}
+
+.feature{width: 300px;height: 200px;background: coral;display: flex;align-items: center;}
+.timeShow{width: 280px;height: 120px;background: #4e75f6;margin: auto;display: flex;align-items: center;}
+.timeBox{width: 30px;height: 60px;background: gainsboro;float: left;border-radius: 6px;margin: auto;line-height: 60px;}
+.timeFont{width: 30px;height: 60px;background: hotpink;font-size: 36px;color: aquamarine;margin-left: 5px;}
+.dotBox{width: 10px;height: 60px;background: gainsboro;float: left;border-radius: 2px;line-height: 54px;}
+.dotFont{width: 10px;height: 60px;color: aquamarine;font-size: 36px;margin-left: 1px;}
